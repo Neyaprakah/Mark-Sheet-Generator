@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Sheet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="section1">
+        <div class="container1">
+            <div class="row-1">
+                <h1>Mark Sheet Generator</h1>
+            </div>
+            <div class="row-2">
+                <div class="col-1">
+                <h2>Student Details</h2>
+                <label>Name</label>
+                <input id="sname" type="text" required>
+                
+                <label>Reg.No</label>
+                <input id="sregno" type="number" required>
+                
+                <label>Course Name-Course ID</label>
+                <input id="scourse" type="text" required>
+                
+                <label>Enrollment No</label>
+                <input id="senrollno" type="number" required>
+                </div>
+                <div class="col-2">
+                    <h2>Student Mark Details</h2>
+                    <div class="col-21">
+                    <div class="theory-1">
+                    <h3>Theory</h3>
+                    <h4>Java Programming</h4> 
+                    <label>External</label>
+                    <input id="esub1" type="number" required>
+                    <label>Internal</label>
+                    <input id="isub1" type="number" required>
+                    <h4>Software Engineering</h4> 
+                    <label>External</label>
+                    <input id="esub2" type="number" required>
+                    <label>Internal</label>
+                    <input id="isub2" type="number" required>
+                    <h4>Operation System</h4> 
+                    <label>External</label>
+                    <input id="esub3" type="number" required>
+                    <label>Internal</label>
+                    <input id="isub3" type="number" required>
+                    <h4>Probability and Statics</h4> 
+                    <label>External</label>
+                    <input id="esub4" type="number" required>
+                    <label>Internal</label>
+                    <input id="isub4" type="number" required>
+                    <h4>Design and Analysis of Algorithm</h4> 
+                    <label>External</label>
+                    <input id="esub5" type="number" required>
+                    <label>Internal</label>
+                    <input id="isub5" type="number" required>
+                    </div>
+                    <div class="practical-1">
+                    <h3>Practical</h3>
+                    <h4>Java Programming Laborarty</h4>
+                    <label>Internal</label>
+                    <input id="isub6" type="number" required>
+                    <h4>Operating System Laborarty</h4>
+                    <label>Internal</label>
+                    <input id="isub7" type="number" required>
+                    <h4>Data Structure Laboraty</h4>
+                    <label>Internal</label>
+                    <input id="isub8" type="number" required>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-3">
+                <button type="submit" id="submit" onclick="generate()" >Generate</button>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row1">
+                <div class="col11">
+                    <p>Sr.No.<span>00000000</span></p>
+                </div>
+                <div class="col12">
+                    <img id="logo" src="images/file.png">
+                </div>
+                <div class="col13">
+                    <img id="qr" src="images/adobe-express-qr-code.jpeg" width="100px">
+                </div>
+            </div>
+            <div class="row2">
+                <h1>Hindusthan College Of Engineering And Technology</h1>
+            </div>
+            <div class="row3">
+                <p>An Autonomous Institution Recognized by Government of India</p>
+            </div>
+            <div class="row4">
+                <h3>Annual Statement of Marks</h3>
+            </div>
+            <div class="row5">
+                <table id="table1">
+                    <tr id="tr11">
+                        <td id="td11">
+                            <p>Name of the Candiate</p>
+                            <h4 id="name"></h4>
+                        </td>
+                        <td id="td11">
+                            <p>Course name with Code</p>
+                            <h4 id="course"></h4> 
+                        </td>
+                    </tr>
+                    <tr id="tr12">
+                        <td id="td12">
+                            <div id="td121">
+                            <p>Reg.no</p>
+                            <h4 id="regno"></h4>
+                            </div>
+                            <div id="td122">
+                            <p>Enrollment No.</p>
+                            <h4 id="enrollno"></h4>
+                            </div>
+                        </td>
+                        <td id="td11">
+                            <p>Authorised Training Centre Name</p>
+                            <h4 id="tcname">Hindusthan College Of Engineering And Technology</h4>
+                        </td>
+                    </tr>
+
+                </table>
+                <table id="table2">
+                    <tr id="tr21">
+                        <td id="th21">Subject Code</td>
+                        <td id="th22">Subject Name</td>
+                        <td id="th23">Max. Marks</td>
+                        <td id="th24">
+                            <div class="tdrow1">Marks Obtained in Figures</div>
+                            <div class="tdrow2">
+                                <div class="tdcol1">
+                                    Theory
+                                </div>
+                                <div class="tdcol2">
+                                    Practical
+                                </div>
+                                <div class="tdcol3">
+                                    Total
+                                </div>
+                            </div>
+                        </td>
+                        <td id="th25">
+                            Total in Words
+                        </td>
+                    </tr>
+                    <tr id="tr22">
+                        <td id="td21"></td>
+                        <td id="td22">Java Programming</td>
+                        <td id="td23">100</td>
+                        <td id="td24">
+                            <div class="theory">
+                                <p id="theory1"></p>
+                            </div>
+                            <div class="practical">
+                                <p id="practical1"></p>
+                            </div>
+                            <div class="total">
+                                <p id="total1"></p>
+                            </div>
+                        </td>
+                        <td id="td25">Zero Zero</td>
+                    </tr>
+                    <tr id="tr23">
+                        <td id="td21"></td>
+                        <td id="td22">Software Engineering</td>
+                        <td id="td23">100</td>
+                        <td id="td24">
+                            <div class="theory">
+                                <p id="theory2"></p>
+                            </div>
+                            <div class="practical">
+                                <p id="practical2"></p>
+                            </div>
+                            <div class="total">
+                                <p id="total2"></p>
+                            </div>
+                        </td>
+                        <td id="td25">Zero Zero</td>
+                    </tr>
+                    <tr id="tr24">
+                        <td id="td21"></td>
+                        <td id="td22">Operation System</td>
+                        <td id="td23">100</td>
+                        <td id="td24">
+                            <div class="theory">
+                                <p id="theory3"></p>
+                            </div>
+                            <div class="practical">
+                                <p id="practical3"></p>
+                            </div>
+                            <div class="total">
+                                <p id="total3"></p>
+                            </div>
+                        </td>
+                        <td id="td25">Zero Zero</td>
+                    </tr>
+                    <tr id="tr25">
+                        <td id="td21"></td>
+                        <td id="td22">Probability and Statics</td>
+                        <td id="td23">100</td>
+                        <td id="td24">
+                            <div class="theory">
+                                <p id="theory4"></p>
+                            </div>
+                            <div class="practical">
+                                <p id="practical4"></p>
+                            </div>
+                            <div class="total">
+                                <p id="total4"></p>
+                            </div>
+                        </td>
+                        <td id="td25">Zero Zero</td>
+                    </tr>
+                    <tr id="tr26">
+                        <td id="td21"></td>
+                        <td id="td22">Design and Analysis of Algorithm</td>
+                        <td id="td23">100</td>
+                        <td id="td24">
+                            <div class="theory">
+                                <p id="theory5"></p>
+                            </div>
+                            <div class="practical">
+                                <p id="practical5"></p>
+                            </div>
+                            <div class="total">
+                                <p id="total5"></p>
+                            </div>
+                        </td>
+                        <td id="td25">Zero Zero</td>
+                    </tr>
+                    <tr id="7">
+                        <td id="td21"></td>
+                        <td id="td22">Java Programming Laborarty</td>
+                        <td id="td23">100</td>
+                        <td id="td24">
+                            <div class="theory">
+                                <p id="theory6">XX</p>
+                            </div>
+                            <div class="practical">
+                                <p id="practical6"></p>
+                            </div>
+                            <div class="total">
+                                <p id="total6"></p>
+                            </div>
+                        </td>
+                        <td id="td25">Zero Zero</td>
+                    </tr>
+                    <tr id="tr28">
+                        <td id="td21"></td>
+                        <td id="td22">Operating System Laborarty</td>
+                        <td id="td23">100</td>
+                        <td id="td24">
+                            <div class="theory">
+                                <p id="theory7">XX</p>
+                            </div>
+                            <div class="practical">
+                                <p id="practical7"></p>
+                            </div>
+                            <div class="total">
+                                <p id="total7"></p>
+                            </div>
+                        </td>
+                        <td id="td25">Zero Zero</td>
+                    </tr>
+                    <tr id="tr29">
+                        <td id="tdl21"></td>
+                        <td id="tdl22">Data Structure Laboraty</td>
+                        <td id="tdl23">100</td>
+                        <td id="tdl24">
+                            <div class="theory">
+                                <p id="theory8">XX</p>
+                            </div>
+                            <div class="practical">
+                                <p id="practical8"></p>
+                            </div>
+                            <div class="total">
+                                <p id="total8"></p>
+                            </div>
+                        </td>
+                        <td id="tdl25">Zero Zero</td>
+                    </tr>
+                    <tr id="tr210">
+                        <td id="td21gt">
+                            <p>Grand Total</p>
+                            <p>In Words</p>
+                        </td>
+                        <td id="t1">
+                            <div class="grandtotal"><p id="grandtotal"></p></div>
+                            <div class="gtwords"><p>Zero Zero Zero</p></div>
+                        </td>
+                        <td id="t2"></td>
+                        <td id="t3"></td>
+                        <td id="t4"></td>
+                    </tr>
+                </table>
+                <table id="table3">
+                    <tr id="tr211">
+                        <td id="td111">Month and Year of Examination</td>
+                        <td id="td112">No of Subjects Offered</td>
+                        <td id="td113">Result</td>
+                        <td id="td114">Percentage</td>
+                        <td id="td115">Grade</td>
+                    </tr>
+                    <tr id="tr212">
+                        <td id="td211">May 2020</td>
+                        <td id="td212">T5+O3=8</td>
+                        <td id="td213"><div class="result"><p id="result"></p></div></td>
+                        <td id="td214"><div class="percentage"><p id="percentage"></p></div></td>
+                        <td id="td215"><div class="grade"><p id="grade"></p></div></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row6">
+                <div class="date">
+                    <p>Date:<span id="date">02-08-2024</span></p>
+                </div>
+                <div class="sign">
+                    <p> </p>
+                    <p>Deputy Controller of Examination</p>
+                </div>
+            </div>
+            <div class="row7">
+                <p>Subject marked with * Indicates Exemption</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

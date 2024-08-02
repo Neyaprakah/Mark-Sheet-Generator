@@ -1,0 +1,309 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0px;
+}
+input{
+    background-color: lavender;
+    border: 1px solid lavender;
+    border-radius: 3px;
+}
+.row-1{
+    text-align: center;
+    padding: 30px;
+    color: white;
+    background-color:cornflowerblue;
+}
+.row-2{
+    display: flex;
+    background-color:honeydew;
+    padding: 20px;
+}
+.col-1{
+    /* width: 300px; */
+    display: grid;
+    margin-right:100px ;
+    height: 400px;
+}
+.col-1 h2{
+    text-align: center;
+}
+.col-1 input{
+    height: 20px;
+    width: 250px;
+}
+.col-2 h2{
+    text-align: center;
+}
+.col-21{
+    display: flex;
+}
+.col-21 input{
+    height: 20px;
+    width: 250px;
+}
+.theory-1{
+    margin-right: 100px;
+}
+.row-3{
+    background-color: honeydew;
+    padding: 20px;
+    text-align: end;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: white;
+}
+.section{
+    background-color: cadetblue;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+.container{
+    border: 2px solid goldenrod;
+    border-radius: 2px;
+    width: 905px;
+    padding: 20px 30px 1px 30px;
+    background-color:beige;
+    margin-left: 18%;
+    /* margin-bottom: 100px; */
+    /* margin-top: 100px; */
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+}
+.col12{
+    margin-top: 75px;
+}
+.row2{
+    text-align: center;
+}
+.row3{
+    text-align: center;
+}
+.row4{
+    text-align: center;
+}
+#td11{
+    width: 450px;
+    height: 100px;
+    text-align: center;
+}
+#td11 p{
+    color: brown;
+    
+}
+#table1{
+    border-collapse: collapse;
+    background-color:blanchedalmond;
+}
+#td12{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width: 450px;
+    border-right: 0px;
+    border-top: 0px;
+}
+#td121{
+    text-align: center;
+    width: 225px;
+    border-right: 2px solid goldenrod;
+}
+#td12 p{
+    color: brown;
+}
+#td122{
+    text-align: center;
+    width: 225px;
+}
+td{
+    border: 2px solid goldenrod;
+}
+#table2{
+    margin-top: 10px;
+    border-collapse: collapse;
+    background-color: blanchedalmond;
+    /* width: 900px; */
+}
+
+#th21{
+    border-right:0px;
+    width: 100px;
+    text-align: center;
+    height: 80px;
+    color: brown;
+}
+#td21{
+    border-right:0px;
+    width: 100px;
+    text-align: center;
+    border-bottom: 0px;
+    border-top: 0px;
+    height: 40px;
+}
+
+#tdl21{
+    border-right:0px;
+    width: 100px;
+    text-align: center;
+    border-top: 0px;
+    height: 40px;
+}
+#th22{
+    border-left:0px ;
+    width: 350px;
+    text-align: center;
+    color: brown;
+}
+#td22{
+    padding-left: 30px;
+    border-left:0px ;
+    width: 275px;
+    /* text-align: center;   */
+    border-bottom: 0px;
+    border-top: 0px;
+}
+#tdl22{
+    padding-left: 30px;
+    border-left:0px ;
+    width: 275px;
+    /* text-align: center; */
+    border-top: 0px;
+}
+#th23{
+    width: 75px;
+    text-align: center;
+    color: brown;
+}
+#td23{
+    width: 75px;
+    text-align: center;
+    border-bottom: 0px;
+    border-top: 0px;
+}
+#tdl23{
+    width: 75px;
+    text-align: center;
+    border-top: 0px;
+}
+.tdrow1{
+    height: 40px;
+    text-align: center;
+    color: brown;
+}
+.tdrow2{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+    border-top: 2px solid goldenrod;
+    height: 40px;
+    width: 200px;
+    color: brown;
+}
+.tdcol1,.tdcol2{
+    border-right: 2px solid goldenrod;
+}
+.tdcol1,.tdcol2,.tdcol3{
+    width: 67px;
+    padding: 10px;
+}
+#th24{
+    width: 200px;
+    text-align: center;
+}
+
+#td24{
+    display: flex;
+    justify-content: space-around;
+    border:0px;
+    width: 200px;
+    height: 40px;
+}
+#tdl24{
+    display: flex;
+    justify-content: space-around;
+    border:0px;
+    width: 200px;
+    height: 40px;
+}
+#th25{
+    width:167px ;
+    text-align: center;
+    color: brown;
+}
+#td25{
+    width:167px ;
+    text-align: center;
+    border-bottom: 0px;
+    border-top: 0px;
+}
+#tdl25{
+    width:167px ;
+    text-align: center;
+    border-top: 0px;
+}
+#td21gt{
+    border-right: 0px;
+    color: brown;
+}
+#t1,#t2,#t3{
+    border-left: 0px;
+    border-right: 0px;
+}
+#t4{
+    border-left: 0px;
+}
+#table3{
+    border-collapse: collapse;
+    margin-top: 0px;
+    background-color: blanchedalmond;
+}
+#tr211{
+    color: brown;
+}
+#td111{
+    width: 350px;
+    height: 50px;
+    border-top: 0px;
+    text-align: center;
+}
+#td112{
+    width: 200px;
+    border-top: 0px;
+    text-align: center;
+}
+#td113{
+    width: 100px;
+    border-top: 0px;
+    text-align: center;
+}
+#td114{
+    width: 125px;
+    border-top: 0px;
+    text-align: center;
+}
+#td115{
+    width: 116px;
+    border-top: 0px;
+    text-align: center;
+}
+#td211,#td212,#td213,#td214,#td215{
+    height: 50px;
+    text-align: center;
+}
+.row6{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.row7{
+    text-align: center;
+}
